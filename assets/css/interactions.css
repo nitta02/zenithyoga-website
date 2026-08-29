@@ -1,0 +1,5 @@
+a[class*="button"],a[class*="btn"],button:not([class*="toggle"]){transition:transform .25s ease,box-shadow .25s ease,filter .25s ease}
+a[class*="button"]:hover,a[class*="button"]:focus-visible,a[class*="btn"]:hover,a[class*="btn"]:focus-visible,button:not([class*="toggle"]):hover,button:not([class*="toggle"]):focus-visible{transform:translateY(-3px);box-shadow:0 12px 24px rgba(0,0,0,.2);filter:brightness(1.05)}
+a[class*="button"]>span,a[class*="btn"]>span{transition:transform .25s ease}
+a[class*="button"]:hover>span,a[class*="button"]:focus-visible>span,a[class*="btn"]:hover>span,a[class*="btn"]:focus-visible>span{transform:translateX(3px)}
+@media(prefers-reduced-motion:reduce){a[class*="button"],a[class*="btn"],button{transition:none!important}}

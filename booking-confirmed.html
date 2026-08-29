@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your Zenith Wellness yoga session booking is confirmed.">
+  <title>Booking Confirmed | Zenith Wellness</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/programs.css">
+  <link rel="stylesheet" href="assets/css/booking-confirmed.css">
+</head>
+<body class="confirmed-page">
+  <header class="program-header confirmed-header">
+    <div class="program-nav">
+      <a href="index.html" class="figma-logo" aria-label="Zenith Yoga home"><img src="assets/icons/figma/logo-white.svg" alt="Zenith Yoga"></a>
+      <button class="program-menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="program-menu"><span></span><span></span><span></span></button>
+      <nav id="program-menu" aria-label="Primary navigation"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="programs.html">Programs</a><a href="instructors.html">Instructors</a><a href="contact.html">Contact</a></nav>
+      <a class="book-button" href="booking.html">Book a Session</a>
+    </div>
+  </header>
+
+  <main class="confirmation-main">
+    <div class="confirmation-shell">
+      <section class="success-hero">
+        <span class="success-icon"><img src="assets/icons/confirmation/success.svg" alt=""></span>
+        <h1>Your Session Is Booked</h1>
+        <p>Take a deep breath. Your spot is secured. We’ve<br>sent a detailed confirmation to your email.</p>
+      </section>
+
+      <section class="confirmation-card">
+        <div class="confirmation-card-head"><span>Confirmed</span><h2 data-booking="service">Restorative Vinyasa Flow</h2></div>
+        <div class="booking-facts">
+          <article><img src="assets/icons/confirmation/calendar.svg" alt=""><div><small>Date &amp; Time</small><strong data-booking="date">Thursday, Oct 24, 2024</strong><strong data-booking="time">10:00 AM - 11:15 AM</strong></div></article>
+          <article><img src="assets/icons/confirmation/instructor.svg" alt=""><div><small>Instructor</small><strong data-booking="instructor">Elena Rodriguez</strong></div></article>
+          <article><img src="assets/icons/confirmation/location.svg" alt=""><div><small>Location</small><strong data-booking="location">Zenith Downtown Studio - Room B</strong><a href="https://maps.google.com/?q=Zenith+Downtown+Studio+Portland" target="_blank" rel="noopener">Get Directions <img src="assets/icons/confirmation/arrow.svg" alt=""></a></div></article>
+        </div>
+      </section>
+
+      <section class="prepare-panel"><h2>WHAT TO PREPARE</h2><ul><li>Wear comfortable, breathable clothing suitable for movement.</li><li>Please arrive 10–15 minutes early to settle in and set up your space.</li><li>Mats and props are provided, but feel free to bring your own if preferred.</li><li>Bring a water bottle to stay hydrated after the session.</li></ul></section>
+
+      <div class="confirmation-actions"><button type="button" id="add-calendar">Add to Calendar</button><a href="index.html">Back to Home</a></div>
+    </div>
+  </main>
+
+  <footer class="program-footer"><div class="program-container footer-main"><div class="footer-about"><img src="assets/icons/figma/logo-white.svg" alt="Zenith Yoga"><p>Elevating mind, body, and spirit<br>through mindful movement and<br>holistic practices.</p></div><div><h3>Quick Links</h3><a href="faq.html">FAQs</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></div><div><h3>Company</h3><a href="contact.html">Contact Us</a><a href="#">Careers</a><a href="index.html#journal">Journal</a></div><div><h3>Newsletter</h3><p>Subscribe for wellness tips and updates.</p><form class="newsletter"><input type="email" placeholder="Your email" aria-label="Email address" required><button type="submit" aria-label="Subscribe">→</button></form></div></div><div class="program-container footer-copy">© 2026 Zenith Wellness. All rights reserved.</div></footer>
+  <script src="assets/js/programs.js"></script>
+  <script src="assets/js/booking-confirmed.js"></script>
+</body>
+</html>

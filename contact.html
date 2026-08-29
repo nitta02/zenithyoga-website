@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Zenith Wellness for yoga classes, private sessions, and studio support.">
+  <title>Contact | Zenith Wellness</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/programs.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
+</head>
+<body class="contact-page">
+  <header class="program-header contact-header">
+    <div class="program-nav">
+      <a href="index.html" class="figma-logo" aria-label="Zenith Yoga home"><img src="assets/icons/figma/logo-white.svg" alt="Zenith Yoga"></a>
+      <button class="program-menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="program-menu"><span></span><span></span><span></span></button>
+      <nav id="program-menu" aria-label="Primary navigation"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="programs.html">Programs</a><a href="instructors.html">Instructors</a><a href="contact.html" class="active" aria-current="page">Contact</a></nav>
+      <a class="book-button" href="booking.html">Book a Session</a>
+    </div>
+    <div class="contact-title"><h1>Let’s Start a Conversation</h1><p>Whether you have a question, need support, or want to explore working together, we’re here to help.</p></div>
+  </header>
+
+  <main>
+    <section class="contact-main">
+      <div class="program-container contact-grid">
+        <div class="contact-details">
+          <article class="contact-card">
+            <h2>Get in Touch</h2>
+            <a class="detail-row" href="tel:+15551234567"><span class="detail-icon"><img src="assets/icons/contact/icon-04.svg" alt=""></span><span><small>Phone</small><strong>+1 (555) 123-4567</strong></span></a>
+            <a class="detail-row" href="mailto:hello@zenithwellness.com"><span class="detail-icon"><img src="assets/icons/contact/icon-13.svg" alt=""></span><span><small>Email</small><strong>hello@zenithwellness.com</strong></span></a>
+            <a class="detail-row" href="https://wa.me/15559876543" target="_blank" rel="noopener"><span class="detail-icon"><img src="assets/icons/contact/icon-07.svg" alt=""></span><span><small>WhatsApp</small><strong>+1 (555) 987-6543</strong></span></a>
+          </article>
+          <article class="contact-card compact-card">
+            <h2>Studio Location</h2>
+            <div class="detail-row"><span class="detail-icon"><img src="assets/icons/contact/icon-14.svg" alt=""></span><address>123 Tranquility Lane, Suite 400<br>Portland, OR 97204</address></div>
+          </article>
+          <article class="contact-card compact-card hours-card">
+            <h2>Business Hours</h2>
+            <div class="detail-row"><span class="detail-icon"><img src="assets/icons/contact/icon-02.svg" alt=""></span><dl><div><dt>Monday – Friday</dt><dd>7:00 AM – 8:00 PM</dd></div><div><dt>Saturday</dt><dd>8:00 AM – 4:00 PM</dd></div><div><dt>Sunday</dt><dd>Closed</dd></div></dl></div>
+          </article>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <h2>Send Us a Message</h2>
+          <div class="field-row"><label>First Name<input type="text" name="firstName" placeholder="Enter your first name" required></label><label>Last Name<input type="text" name="lastName" placeholder="Enter your last name" required></label></div>
+          <label>Email Address<input type="email" name="email" placeholder="you@example.com" required></label>
+          <label>Phone Number <span>(Optional)</span><input type="tel" name="phone" placeholder="+1 (555) 000-0000"></label>
+          <label>What are you interested in?<span class="select-wrap"><select name="interest" required><option value="" selected disabled>Select an option</option><option>Beginner Yoga</option><option>Private Yoga</option><option>Group Classes</option><option>Corporate Wellness</option><option>General Question</option></select></span></label>
+          <label>Your Message<textarea name="message" rows="6" placeholder="Tell us how we can help..." required></textarea></label>
+          <button type="submit">Send Message <img src="assets/icons/contact/icon-10.svg" alt=""></button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="whatsapp-section">
+      <div class="program-container whatsapp-panel"><div><span class="whatsapp-icon"><img src="assets/icons/contact/icon-05.svg" alt=""></span><span><h2>Prefer WhatsApp?</h2><p>Chat with our team directly for quick questions and support.</p></span></div><a href="https://wa.me/15559876543" target="_blank" rel="noopener">Chat With Us <img src="assets/icons/contact/icon-01.svg" alt=""></a></div>
+    </section>
+  </main>
+
+  <footer class="program-footer"><div class="program-container footer-main"><div class="footer-about"><img src="assets/icons/figma/logo-white.svg" alt="Zenith Yoga"><p>Elevating mind, body, and spirit<br>through mindful movement and<br>holistic practices.</p></div><div><h3>Quick Links</h3><a href="faq.html">FAQs</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></div><div><h3>Company</h3><a href="contact.html">Contact Us</a><a href="#">Careers</a><a href="index.html#journal">Journal</a></div><div><h3>Newsletter</h3><p>Subscribe for wellness tips and updates.</p><form class="newsletter"><input type="email" placeholder="Your email" aria-label="Email address" required><button type="submit" aria-label="Subscribe">→</button></form></div></div><div class="program-container footer-copy">© 2026 Zenith Wellness. All rights reserved.</div></footer>
+  <script src="assets/js/programs.js"></script>
+  <script src="assets/js/contact.js"></script>
+</body>
+</html>
