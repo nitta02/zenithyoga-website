@@ -1,0 +1,44 @@
+/* Shared navigation. The containing header supplies its background. */
+[data-site-navbar] { min-height: 116px; position: relative; z-index: 10; }
+.global-navbar, .global-navbar * { box-sizing: border-box; }
+.global-navbar {
+  position: relative;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: 181px 1fr 181px;
+  align-items: center;
+  width: min(1320px, calc(100% - 48px));
+  min-height: 116px;
+  margin: auto;
+  color: #fff;
+  font: 500 16px/1.5 'DM Sans', Poppins, Arial, sans-serif;
+}
+.global-navbar a { color: inherit; text-decoration: none; }
+.global-navbar__logo img { display: block; width: 181px; height: 58px; object-fit: contain; }
+.global-navbar__links { display: flex; justify-content: center; align-items: center; gap: 40px; }
+.global-navbar__links a { padding-bottom: 5px; border-bottom: 1px solid transparent; transition: color .2s, border-color .2s; }
+.global-navbar__links a:hover,
+.global-navbar__links a[aria-current],
+.global-navbar__links a.is-active { color: #e1f3d4; border-bottom-color: currentColor; }
+.global-navbar a:focus-visible, .global-navbar__toggle:focus-visible { outline: 2px solid #e1f3d4; outline-offset: 5px; }
+.global-navbar .global-navbar__book { justify-self: end; padding: 12px 18px; color: #000; background: #fff; border-radius: 8px; font: 18px/22px Jun, Georgia, serif; }
+.global-navbar__book:hover { background: #e1f3d4; }
+.global-navbar .global-navbar__toggle { display: none; padding: 10px; border: 0; border-radius: 4px; background: transparent; color: #fff; cursor: pointer; transform: none; box-shadow: none; filter: none; }
+.global-navbar__toggle span { display: block; width: 25px; height: 2px; margin: 5px 0; background: currentColor; }
+.global-navbar__links .global-navbar__mobile-book { display: none; }
+@media (max-width: 900px) {
+  .global-navbar { grid-template-columns: 1fr auto; }
+  .global-navbar .global-navbar__toggle { display: block; }
+  .global-navbar .global-navbar__book { display: none; }
+  .global-navbar__links { display: none; position: absolute; top: 92px; left: 0; right: 0; padding: 16px; flex-direction: column; align-items: stretch; gap: 0; background: #111; border-radius: 12px; max-height: calc(100dvh - 110px); overflow-y: auto; }
+  .global-navbar__links.is-open { display: flex; }
+  .global-navbar__links a { padding: 12px; }
+  .global-navbar__links .global-navbar__mobile-book { display: block; }
+}
+@media (max-width: 640px) {
+  .global-navbar { width: calc(100% - 28px); }
+  .global-navbar__logo img { width: 140px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .global-navbar a { transition: none; }
+}
