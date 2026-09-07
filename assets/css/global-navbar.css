@@ -26,14 +26,20 @@
 .global-navbar .global-navbar__toggle { display: none; padding: 10px; border: 0; border-radius: 4px; background: transparent; color: #fff; cursor: pointer; transform: none; box-shadow: none; filter: none; }
 .global-navbar__toggle span { display: block; width: 25px; height: 2px; margin: 5px 0; background: currentColor; }
 .global-navbar__links .global-navbar__mobile-book { display: none; }
+html.mobile-menu-open, html.mobile-menu-open body { overflow: hidden; }
 @media (max-width: 900px) {
   .global-navbar { grid-template-columns: 1fr auto; }
   .global-navbar .global-navbar__toggle { display: block; }
   .global-navbar .global-navbar__book { display: none; }
-  .global-navbar__links { display: none; position: absolute; top: 92px; left: 0; right: 0; padding: 16px; flex-direction: column; align-items: stretch; gap: 0; background: #111; border-radius: 12px; max-height: calc(100dvh - 110px); overflow-y: auto; }
+  .global-navbar__links { display: none; position: fixed; inset: 0; z-index: 100; height: 100vh; height: 100dvh; padding: 120px 24px 40px; flex-direction: column; align-items: center; justify-content: safe center; gap: 16px; background: #111; overflow-y: auto; overscroll-behavior: contain; }
   .global-navbar__links.is-open { display: flex; }
-  .global-navbar__links a { padding: 12px; }
+  .global-navbar__links a { flex-shrink: 0; padding: 12px; font-size: 24px; }
   .global-navbar__links .global-navbar__mobile-book { display: block; }
+  .mobile-menu-open .global-navbar__logo,
+  .mobile-menu-open .global-navbar__toggle { position: relative; z-index: 101; }
+  .mobile-menu-open .global-navbar .global-navbar__toggle[aria-expanded="true"] { width: 44px; height: 44px; background: transparent; }
+  .mobile-menu-open .global-navbar__toggle span { display: none; }
+  .mobile-menu-open .global-navbar__toggle::after { content: '\00d7'; display: block; color: #fff; font: 36px/24px Arial, sans-serif; }
 }
 @media (max-width: 640px) {
   .global-navbar { width: calc(100% - 28px); }

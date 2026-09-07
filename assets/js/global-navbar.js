@@ -46,6 +46,7 @@
     const menu = mount.querySelector('.global-navbar__links');
     function setOpen(open) {
       menu.classList.toggle('is-open', open);
+      document.documentElement.classList.toggle('mobile-menu-open', open);
       toggle.setAttribute('aria-expanded', String(open));
       toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
     }
@@ -54,6 +55,19 @@
       if (event.target.closest('a')) setOpen(false);
     });
     document.addEventListener('keydown', event => {
+      if (toggle.getAttribute('aria-expanded') !== 'true') return;
+      if (event.key === 'Tab') {
+        const controls = [...mount.querySelectorAll('a, button')].filter(element => element.getClientRects().length);
+        const first = controls[0];
+        const last = controls[controls.length - 1];
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first.focus();
+        }
+      }
       if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
         setOpen(false);
         toggle.focus();
