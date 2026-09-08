@@ -11,7 +11,7 @@
   }
 
   try {
-    const response = await fetch('global_footer.html');
+    const response = await fetch(mount.dataset.siteFooter || 'global_footer.html');
     if (!response.ok) throw new Error(`Footer request failed: ${response.status}`);
     mount.outerHTML = await response.text();
   } catch (error) {
