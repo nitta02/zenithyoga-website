@@ -39,13 +39,6 @@
   .timeline{grid-template-columns:minmax(0,1fr);gap:24px}
   .timeline::before{display:none}
   .timeline p{margin-top:18px}
-  .about-page .global-footer{padding:60px 0 40px}
-  .about-page .global-footer__container{width:calc(100% - 28px)}
-  .about-page .global-footer__grid{grid-template-columns:minmax(0,1fr);gap:12px}
-  .about-page .global-footer__about{min-height:173px}
-  .about-page .global-footer__about p{max-width:none;margin-top:33px;font-size:12px;line-height:20px}
-  .about-page .global-footer__grid>div:last-child{min-height:152px}
-  .about-page .global-footer__copy{margin-top:46px;padding-top:30px}
 }
 @media(max-width:374px){
   .about-copy h2,.values-section h2,.timeline-section h2,.instructor-copy h2,.practice-content h2{font-size:40px;line-height:42px}

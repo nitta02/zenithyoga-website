@@ -1,0 +1,71 @@
+/* Beginner Yoga details: Figma node 6024:1868. */
+@font-face{font-family:Poppins;src:url('../fonts/poppins-regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+.class-detail-page{background:var(--surface)}
+.detail-title{padding:100px 24px;text-align:center}
+.class-detail-page .program-header h1{display:block;height:auto;margin:0 0 24px;font:400 76px/76px var(--jun);letter-spacing:-5px}
+.detail-title p{max-width:1000px;margin:0 auto;color:#f3f3f3;font:16px/28px var(--body)}
+.detail-hero{padding:100px 0}
+.detail-hero-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.detail-intro .green-label{margin:0 0 12px;font:16px/22px var(--jun)}
+.detail-intro h2{margin:0 0 16px}
+.detail-intro>p:not(.green-label){max-width:590px}
+.detail-chips{gap:16px}
+.detail-chips span{font-size:16px}
+.detail-chips img{flex-shrink:0}
+.detail-chips span:nth-child(1) img{width:20px;height:20px}
+.detail-chips span:nth-child(2) img{width:3px;height:6px}
+.detail-chips span:nth-child(3) img{width:24px;height:17px}
+.detail-content{padding:100px 0}
+.detail-main section>p{font:20px/36px var(--body)}
+.detail-main section>p:last-child{margin-bottom:0}
+.learn-box ul{font:20px/36px var(--body);row-gap:8px}
+.learn-box li{align-items:flex-start}
+.learn-box li img{flex:0 0 20px;margin-top:2px}
+.booking-card{box-shadow:none}
+.price{margin-bottom:24px}
+.price span{padding-bottom:0;font:16px/28px var(--body)}
+.booking-card ul{font:16px/28px var(--body)}
+.booking-card li img{flex-shrink:0}
+.booking-card li:nth-child(1) img{width:16.667px;height:16.667px}
+.booking-card li:nth-child(2) img{width:15px;height:16.667px}
+.booking-card li:nth-child(3) img{width:18.333px;height:13.333px}
+@media(max-width:1100px){.detail-layout{grid-template-columns:minmax(0,1fr) 340px;gap:40px}.learn-box ul{grid-template-columns:1fr}.detail-chips{gap:10px}.detail-chips span{padding:8px 14px}.booking-card{padding:24px}}
+@media(max-width:900px){.detail-title{padding:80px 24px}.detail-layout{grid-template-columns:1fr}.booking-card{position:static;max-width:420px;width:100%}.detail-content{padding:60px 0 80px}.learn-box ul{grid-template-columns:1fr 1fr}}
+@media(max-width:700px){.detail-title{padding:64px 20px}.class-detail-page .program-header h1{font-size:58px;line-height:60px;letter-spacing:-3px}.detail-hero{padding:72px 0}.detail-hero-grid{grid-template-columns:1fr}.detail-chips span{font-size:14px}.detail-content{padding:0 0 78px}.detail-main section>p{font-size:16px;line-height:29px}.learn-box ul{grid-template-columns:1fr;font-size:16px;line-height:28px}.booking-card{max-width:none}}
+/* Mobile reference: Figma node 6105:2166 (400px). */
+@media(max-width:640px){
+  .class-detail-page .program-container{width:calc(100% - 40px)}
+  .class-detail-page [data-site-navbar],.class-detail-page .global-navbar{min-height:102px}
+  .class-detail-page .global-navbar{width:calc(100% - 40px)}
+  .class-detail-page .global-navbar__logo img{width:131px;height:42px}
+  .class-detail-page .global-navbar__toggle{width:44px;height:44px;margin-right:-10px;background:url('../images/programs/menu-mobile.svg') center/24px 24px no-repeat}
+  .class-detail-page .global-navbar__toggle span{display:none}
+  .detail-title{padding:40px 20px}
+  .class-detail-page .program-header h1{margin-bottom:16px;font-size:48px;line-height:48px;letter-spacing:-4px}
+  .detail-title p{font-size:12px;line-height:20px}
+  .detail-hero{padding:40px 0}
+  .detail-hero-grid{gap:30px}
+  .detail-intro .green-label{font-size:12px;line-height:20px}
+  .detail-intro h2{font-size:48px;line-height:48px;letter-spacing:-2px}
+  .detail-intro>p:not(.green-label){font-size:12px;line-height:20px}
+  .detail-chips{margin-top:30px;gap:16px}
+  .detail-chips span{padding:8px 20px;font-size:12px;line-height:20px}
+  .detail-image{height:auto;aspect-ratio:360/366;border-radius:12px}
+  .detail-content{padding:40px 0}
+  .detail-layout{gap:30px}
+  .detail-main{gap:24px}
+  .detail-main h2{margin-bottom:16px;font-size:48px;line-height:48px;letter-spacing:-2px}
+  .detail-main section>p{font-size:12px;line-height:20px}
+  .detail-main section>p:last-child{margin-bottom:16px}
+  .learn-box{padding:20px}
+  .learn-box ul{gap:16px;font-size:16px;line-height:24px}
+  .learn-box li{min-height:28px}
+  .learn-box li img{margin-top:0}
+  .booking-card{padding:24px}
+  .price-label{font-size:12px;line-height:20px}
+  .price strong{font-size:48px;line-height:48px;letter-spacing:-2px}
+  .price span{font-size:12px;line-height:20px}
+  .booking-button{font-size:16px;line-height:20px}
+  .booking-card ul{font-size:12px;line-height:20px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.class-detail-page *{transition:none!important}}

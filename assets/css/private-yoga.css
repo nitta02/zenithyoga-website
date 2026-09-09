@@ -1,4 +1,7 @@
 .private-page { background: #fbfbfb; }
+.private-mobile-subtitle{display:none}
+@font-face{font-family:PrivatePoppins;src:url('../fonts/poppins-regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:PrivatePoppins;src:url('../fonts/poppins-italic.ttf') format('truetype');font-weight:400;font-style:italic;font-display:swap}
 .private-page .program-header h1 { height: 276px; }
 .private-hero { padding: 120px 0; }
 .private-hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
@@ -34,3 +37,50 @@
 .instructor-grid figure img { width: 100%; height: 100%; object-fit: cover; }
 @media (max-width: 900px) { .private-hero-grid, .instructor-grid { gap: 40px; } .private-price { width: 100%; } .private-hero-image, .instructor-grid figure { height: 500px; } .private-fit-grid { gap: 24px; } .fit-card { padding: 38px; } }
 @media (max-width: 680px) { .private-page .program-header h1 { height: 210px; } .private-hero, .private-fit-section, .private-instructor { padding: 72px 0; } .private-hero-grid, .private-fit-grid, .instructor-grid { grid-template-columns: 1fr; } .private-price { margin-top: 40px; } .private-hero-image, .instructor-grid figure { height: 440px; } .fit-card { min-height: auto; padding: 30px; } .private-instructor .instructor-text { order: 1; } .private-instructor figure { order: 2; } }
+
+/* Mobile Private Yoga reference: 6105:2691. */
+@media(max-width:640px){
+.private-page{--body:PrivatePoppins,Poppins,Arial,sans-serif}
+.private-page .program-container{width:calc(100% - 40px)}
+.private-page [data-site-navbar],.private-page .global-navbar{min-height:102px}
+.private-page .global-navbar{width:calc(100% - 40px)}
+.private-page .global-navbar__logo img{width:131px;height:42px}
+.private-page .global-navbar__toggle{width:44px;height:44px;margin-right:-10px;background:url('../images/programs/menu-mobile.svg') center/24px 24px no-repeat}
+.private-page .global-navbar__toggle span{display:none}
+.private-page .program-header h1{display:block;height:auto;margin:0;padding:40px 20px 16px;font:400 48px/48px var(--jun);letter-spacing:-4px;text-align:center}
+.private-mobile-subtitle{display:block;margin:0;padding:0 20px 40px;color:#f3f3f3;text-align:center;font:12px/20px var(--body)}
+.private-hero,.private-fit-section,.private-instructor{padding:40px 0}
+.private-hero-grid,.instructor-grid{gap:30px}
+.private-intro h2{margin:8px 0 16px;font-size:48px;line-height:48px}
+.private-price{margin-top:30px;padding:32px;width:100%}
+.private-price>p{font-size:12px;line-height:20px}
+.private-price>div{margin-bottom:24px}
+.private-price strong{font-size:48px;line-height:48px;letter-spacing:-2px}
+.private-price>div span{padding-bottom:0;font:12px/20px var(--body)}
+.private-price>a{font-size:16px;line-height:20px}
+.private-price ul{font-size:12px;line-height:20px}
+.private-price li:first-child img{width:15px;height:16.667px}
+.private-price li:last-child img{width:18.333px;height:13.333px}
+.private-price li:first-child img{content:url('../images/private-yoga/duration-mobile.svg')}
+.private-price li:last-child img{content:url('../images/private-yoga/format-mobile.svg')}
+.private-hero-image{height:auto;aspect-ratio:360/366}
+.private-hero-image picture{display:block;width:100%;height:100%}
+.private-fit-grid{gap:24px}
+.fit-card{padding:20px;border-radius:10px}
+.fit-card h2{margin-bottom:16px;font-size:28px;line-height:40px;letter-spacing:0}
+.fit-card ul{gap:12px;font:12px/20px var(--body)}
+.fit-card li{align-items:center;padding-inline:5px;grid-template-columns:14px minmax(0,1fr);gap:24px}
+.fit-card li img{width:14px;height:2px;margin:0}
+.challenge-card li img{content:url('../images/private-yoga/minus-mobile.svg')}
+.outcome-card ul{gap:16px}
+.outcome-card li{padding-inline:4px;grid-template-columns:16.3px minmax(0,1fr);gap:20px}
+.outcome-card li img{width:16.3px;height:12.025px}
+.outcome-card li img{content:url('../images/private-yoga/check-mobile.svg')}
+.instructor-text .green-label{margin:0;font-size:12px;line-height:20px}
+.instructor-text h2{margin:16px 0 12px;font-size:48px;line-height:60px}
+.instructor-text h3{font-size:12px;line-height:20px}
+.instructor-text blockquote{margin:16px 0;font:italic 18px/30px var(--body)}
+.instructor-text>p:last-child{font-size:12px;line-height:20px}
+.instructor-grid figure{height:auto;aspect-ratio:360/366;border-radius:12px}
+.instructor-grid picture{display:block;width:100%;height:100%}
+}

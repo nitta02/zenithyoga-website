@@ -1,0 +1,80 @@
+/* Page-specific Figma styling; programs.css is shared by other pages. */
+@font-face{font-family:Poppins;src:url('../fonts/poppins-regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap}
+.program-title{padding:100px 24px;text-align:center}
+.programs-page .program-header h1{height:auto;display:block;margin:0 0 24px;font:400 76px/76px var(--jun);letter-spacing:-5px}
+.program-title>p{max-width:1000px;margin:0 auto;color:#f3f3f3;font:16px/28px var(--body)}
+.program-intro{padding:100px 0}
+.intro-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:60px}
+.green-label{margin-bottom:12px;line-height:22px}
+.intro-copy h2{margin-bottom:16px;line-height:64px;letter-spacing:-4px}
+.intro-copy>p:last-child{max-width:590px}
+.intro-image{border-radius:16px}
+.filters{gap:16px}
+.filters button{padding:8px 20px;background:#eee;color:#000;font:16px/28px var(--body)}
+.filters button.selected{background:var(--primary);color:#fff}
+.program-card-grid{gap:30px}
+.program-card{min-height:590px;border-color:#f3f3f3;box-shadow:none}
+.program-card h3{font-size:24px}
+.program-card p{min-height:0;margin-bottom:24px;font:16px/28px var(--body)}
+.program-card ul{display:grid;gap:8px;line-height:18px}
+.program-card li{display:flex;align-items:center;gap:8px}
+.program-card li::before{content:'';width:15px;height:15px;background:url('../images/programs/clock.svg') center/contain no-repeat}
+.program-card li:nth-child(2)::before{width:12px;background-image:url('../images/programs/location.svg')}
+.program-card li:nth-child(3)::before{width:12px;height:12px;background-image:url('../images/programs/instructor.svg')}
+.program-card-body>a{display:inline-flex;align-items:center;gap:10px;padding:4px;line-height:22px}
+.program-card-body>a span{display:grid;place-items:center;width:32px;height:32px;padding:0}
+.program-card-body>a img{width:16px;height:14px}
+.program-cta{min-height:0;padding:180px 0;background-image:url('../images/programs/consultation.png');background-position:center}
+.cta-inner{width:min(1200px,calc(100% - 48px))}
+.cta-inner h2{letter-spacing:-4px}
+.cta-inner p{font:20px/36px var(--body)}
+.cta-inner a{gap:10px;padding:6px 6px 6px 24px;line-height:22px}
+.cta-inner a span{width:48px;height:48px;border-radius:8px}
+.cta-inner a img{width:16px;height:14px}
+.program-faq h2{letter-spacing:-4px}
+.faq-list summary{display:flex;align-items:center;justify-content:space-between;gap:20px;font:20px/36px var(--body)}
+.faq-list summary::after{content:'';flex:0 0 12px;width:12px;height:8px;background:url('../images/programs/chevron.svg') center/contain no-repeat}
+@media(max-width:1100px){.intro-copy h2{font-size:54px;line-height:56px}.intro-grid{gap:40px}}
+@media(max-width:900px){.program-title{padding:80px 24px}.intro-image{height:500px}.program-card:last-child{max-width:none;grid-column:auto}.program-card{min-height:0}.program-cta{padding:120px 0}}
+@media(max-width:640px){.program-title{padding:64px 20px}.programs-page .program-header h1{font-size:58px;line-height:60px;letter-spacing:-3px}.program-intro{padding:72px 0}.intro-grid{grid-template-columns:1fr;gap:36px}.intro-copy h2{font-size:48px;line-height:50px;letter-spacing:-3px}.intro-image{height:430px}.filters{gap:10px}.filters button{font-size:14px;padding:8px 16px}.program-cta{padding:96px 0}.cta-inner h2,.program-faq h2{letter-spacing:-2px}.cta-inner p{font-size:16px;line-height:28px}.faq-list summary{font-size:16px;line-height:26px}}
+.intro-description-mobile{display:none}
+/* Mobile reference: 400px frame, with fluid widths for smaller phones. */
+@media(max-width:640px){
+  .programs-page .program-container{width:calc(100% - 40px)}
+  .programs-page [data-site-navbar],.programs-page .global-navbar{min-height:102px}
+  .programs-page .global-navbar{width:calc(100% - 40px)}
+  .programs-page .global-navbar__logo img{width:131px;height:42px}
+  .programs-page .global-navbar__toggle{width:44px;height:44px;margin-right:-10px;background:url('../images/programs/menu-mobile.svg') center/24px 24px no-repeat}
+  .programs-page .global-navbar__toggle span{display:none}
+  .programs-page .program-title{padding:40px 20px}
+  .programs-page .program-header h1{margin-bottom:16px;font-size:48px;line-height:48px;letter-spacing:-4px}
+  .program-title>p{font-size:12px;line-height:20px}
+  .program-intro{padding:40px 0}
+  .intro-grid{gap:30px}
+  .green-label{margin-bottom:8px;font-size:12px;line-height:20px}
+  .intro-copy h2{font-size:48px;line-height:48px;letter-spacing:-2px}
+  .intro-copy>p:last-child{font-size:12px;line-height:20px}
+  .intro-description-desktop{display:none}
+  .intro-description-mobile{display:inline}
+  .intro-image{height:auto;aspect-ratio:360/366;border-radius:12px}
+  .class-section{padding:40px 0}
+  .filters{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-bottom:30px}
+  .filters button{padding:6px 8px;font-size:12px;line-height:20px;background:#f3f3f3;color:#5b5b5b}
+  .program-card-grid{gap:16px}
+  .program-card{border-radius:16px}
+  .card-photo>span{padding:4px 12px;font-size:10px;line-height:16px}
+  .program-card p{font-size:12px;line-height:20px;max-width:260px}
+  .program-card ul{font-size:10px;line-height:16px}
+  .program-card-body>a{padding:2px;font-size:16px;line-height:20px}
+  .program-cta{min-height:500px;padding:117px 15px}
+  .cta-inner{width:100%}
+  .cta-inner h2{margin-bottom:20px;font-size:48px;line-height:48px;letter-spacing:-2px}
+  .cta-inner p{margin-bottom:36px;font-size:16px;line-height:24px}
+  .cta-inner a{gap:14px;padding:8px 8px 8px 24px}
+  .cta-inner a span{width:42px;height:42px;border-radius:6px}
+  .program-faq{padding:40px 0}
+  .program-faq h2{margin-bottom:30px;font-size:48px;line-height:48px;letter-spacing:-2px}
+  .faq-list summary{font-size:16px;line-height:24px;gap:12px}
+}
+@media(max-width:360px){.filters button{padding-inline:3px;font-size:11px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.programs-page *{transition:none!important}}

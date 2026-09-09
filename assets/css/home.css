@@ -1122,9 +1122,4 @@ img {
   .article-grid article > div { border-radius: 16px; }
   .article-grid article:first-child > div { height: auto; aspect-ratio: 393.333 / 240; }
 
-  .home-page .global-footer { padding: 60px 0 40px; }
-  .home-page .global-footer__container { width: calc(100% - 40px); }
-  .home-page .global-footer__grid { grid-template-columns: minmax(0, 1fr); gap: 12px; }
-  .home-page .global-footer__about p { max-width: none; }
-  .home-page .global-footer__copy { margin-top: 46px; padding-top: 30px; }
 }
